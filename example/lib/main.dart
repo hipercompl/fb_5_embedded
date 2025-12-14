@@ -60,9 +60,12 @@ class _MyAppState extends State<MyApp> {
                       } catch (e) {
                         if (context.mounted) {
                           ScaffoldMessenger.of(context).clearSnackBars();
-                          showDialog(
+                          await showDialog(
                             context: context,
-                            builder: (context) => Text(e.toString()),
+                            builder: (context) => AlertDialog(
+                              title: const Text("Error"),
+                              content: Text(e.toString()),
+                            ),
                           );
                         }
                       } finally {
@@ -134,9 +137,12 @@ class _MyAppState extends State<MyApp> {
                       } catch (e) {
                         if (context.mounted) {
                           ScaffoldMessenger.of(context).clearSnackBars();
-                          showDialog(
+                          await showDialog(
                             context: context,
-                            builder: (context) => Text(e.toString()),
+                            builder: (context) => AlertDialog(
+                              title: const Text("Error"),
+                              content: Text(e.toString()),
+                            ),
                           );
                         }
                       } finally {
