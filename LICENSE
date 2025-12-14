@@ -1,6 +1,8 @@
+Dart code of the package fb_5_embedded:
+
 BSD 3-Clause License
 
-Copyright (c) 2025, hipercom.pl
+Copyright (c) 2025, hipercom.pl (Tomasz Tyrakowski)
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -26,3 +28,13 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+--------------------------------------------------------------------------------
+
+Bundled Firebird embedded server binaries for Android:
+
+Detailed licensing information: [https://firebirdsql.org/en/licensing/](https://firebirdsql.org/en/licensing/)
+
+Firebird® modules are released under the [Initial Developer's Public License](https://firebirdsql.org/en/initial-developer-s-public-license-version-1-0). InterBase® was released by Inprise under [InterBase Public Licence](https://firebirdsql.org/en/interbase-public-license).
+
+Both are variants of the Mozilla Public Licence V.1.1 (MPL).
