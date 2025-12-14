@@ -35,6 +35,8 @@ Those are the required steps:
 
 Now you're all set up and good to go! If you use the [*fbdb*](https://pub.dev/packages/fbdb) package to access the database, you can call `FbDb.attach` or `FbDb.createDatabase`, providing just the path to the database file, and omitting the host name, port number, user name and password.
 
+You may also want to look at the [included example](https://github.com/hipercompl/fb_5_embedded/tree/main/example) or the [embedded branch of the *fbdb* demo application](https://github.com/hipercompl/fbdbmobdemo/tree/embedded).
+
 ## Firebird versions vs plugin versions
 
 The *fb_5_embedded* plugin bundles the current stable Firebird embedded engine from the 5.x version lineup (as available on [Firebird web site](https://firebirdsql.org)).
