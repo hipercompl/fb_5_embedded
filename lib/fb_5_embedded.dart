@@ -96,6 +96,8 @@ Future<void> setUpEmbedded({
   firebirdTmp ??= "$firebirdRoot${Platform.pathSeparator}tmp";
   firebirdLock ??= "$firebirdRoot${Platform.pathSeparator}lock";
 
+  final rootExisted = await Directory(firebirdRoot).exists();
+
   await createFBDirs(
     firebirdRoot: firebirdRoot,
     firebirdTmp: firebirdTmp,
@@ -104,7 +106,7 @@ Future<void> setUpEmbedded({
   await deployFBAssets(
     firebirdRoot: firebirdRoot,
     bundle: bundle,
-    forceRedeploy: forceRedeploy,
+    forceRedeploy: forceRedeploy || !rootExisted,
   );
   await setFBEnvVars(
     firebirdRoot: firebirdRoot,
