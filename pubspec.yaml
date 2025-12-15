@@ -1,6 +1,6 @@
 name: fb_5_embedded
 description: "Firebird 5 embedded server packaged for Android."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/hipercompl/fb_5_embedded
 repository: https://github.com/hipercompl/fb_5_embedded
 issue_tracker: https://github.com/hipercompl/fb_5_embedded/issues
@@ -28,3 +28,5 @@ flutter:
     platforms:
       android:
         ffiPlugin: true
+  assets:
+    - assets/
