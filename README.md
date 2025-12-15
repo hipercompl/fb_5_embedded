@@ -21,6 +21,25 @@ Those are the required steps:
     flutter pub get
     ```
 
+
+**IMPORTANT NOTICE**
+
+Due to the size of the bundled Firebird shared libraries and assets (mainly the ICU data file), the plugin cannot be currently published on pub.dev. The total plugin size is about 120 MB (even with Intel 32-bit libraries removed), while pub.dev imposes a hard size limit of 100 MB. Until this is somehow resolved, you can't just invoke `flutter pub add fb_5_embedded`, because the plugin is **not published** on pub.dev at the moment. 
+
+Instead, you need to add the plugin to your `pubspec.yaml` file by hand (in the `dependencies` section), providing the github repository as the plugin location, like this:
+```yaml
+dependencies:
+  fb_5_embedded:
+    git:
+      url: https://github.com/hipercompl/fb_5_embedded.git
+      ref: main
+
+```
+
+and then invoke `flutter pub get`. 
+
+Sorry for inconvenience, I'll think about getting around the pub.dev size limit somehow.
+
 2. Import the package in your application code:
 
     ```dart
