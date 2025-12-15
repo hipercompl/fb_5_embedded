@@ -211,10 +211,13 @@ Future<void> deployFBAssets({
     throw UnimplementedError("Only Android platform is supported.");
   }
   firebirdRoot ??= await getDefaultFBRoot();
-  if ((await Directory(firebirdRoot).exists()) && !forceRedeploy) {
+  final rootExists = await Directory(firebirdRoot).exists();
+  if (rootExists && !forceRedeploy) {
     // Firebird root already exists and we're not allowed to
     // re-deploy the assets
     return;
+  } else if (!rootExists) {
+    await Directory(firebirdRoot).create(recursive: true);
   }
 
   const fbAssetPrefix = "packages/fb_5_embedded/assets";
