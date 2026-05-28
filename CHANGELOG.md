@@ -1,3 +1,10 @@
+## 1.0.2
+
+Bundles Firebird embedded for Android v. 5.0.4. Supported architectures:
+- Arm32 (armeabi-v7a), 
+- Arm64 (arm64-v8a),
+- x64 (x86_64).
+
 ## 1.0.0
 
 Bundles Firebird embedded for Android v. 5.0.3. Supported architectures:
